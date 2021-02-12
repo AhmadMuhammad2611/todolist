@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>todo list</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h1>To Do Organizer</h1>
+        <div class="userinputs">
+            <input type="text" placeholder="Enter Task Name" id="userinput"/>
+            <input type="button" value="Add" onclick="addtodo();"/>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Done</th>
+                        <th>Task</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div style="text-align: right; padding: 20px 80px;" class="clear">
+        <button style="padding: 12px; background-color: #0d057f; color: #fff; border: none; border-radius: 8px;" onclick="clearLocalStorage()">Clear My ToDo List</button>
+    </div>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
